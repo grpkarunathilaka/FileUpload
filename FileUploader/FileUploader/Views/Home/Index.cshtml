@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+</p>
+
+<script type="text/javascript">
+    $(window).load(
+    function () {
+        $("#fileuploader").fileUpload({
+            'uploader': '/Scripts/uploader.swf',
+            'cancelImg': '/Images/cancel.png',
+            'buttonText': 'Select Image',
+            'script': 'Home/Upload',
+            'folder': '/uploads',
+            'fileDesc': 'Image Files',
+            'fileExt': '*.jpg;*.jpeg;*.gif;*.png',
+            'multi': true,
+            'auto': true
+        });
+    }
+);
+    </script>
+
+<div id="fileuploader"></div>
