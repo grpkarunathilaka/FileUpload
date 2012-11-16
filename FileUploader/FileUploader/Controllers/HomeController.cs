@@ -17,6 +17,7 @@ namespace FileUploader.Controllers
 
         public ActionResult About()
         {
+            ViewBag.Message = "Test with ASP.NET MVC!";
             return View();
         }
 
