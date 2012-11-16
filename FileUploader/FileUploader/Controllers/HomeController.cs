@@ -21,6 +21,12 @@ namespace FileUploader.Controllers
             return View();
         }
 
+        public ActionResult Delete()
+        {
+            ViewBag.Message = "Test with ASP.NET MVC!";
+            return View("About");
+        }
+
         public string Upload(HttpPostedFileBase fileData)
         {
             var fileName = this.Server.MapPath("~/uploads/" + System.IO.Path.GetFileName(fileData.FileName));
