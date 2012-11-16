@@ -21,7 +21,7 @@ namespace FileUploader.Controllers
             return View();
         }
 
-        public ActionResult Delete()
+        public ActionResult Edit()
         {
             ViewBag.Message = "Test with ASP.NET MVC!";
             return View("About");
